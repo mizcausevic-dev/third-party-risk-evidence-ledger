@@ -118,3 +118,7 @@ Open:
 - [**`detection-gap-coverage-lab`**](https://github.com/mizcausevic-dev/detection-gap-coverage-lab) — security-coverage proof
 
 Together they form a broader recruiter-facing governance lane: vendor reviews, evidence routing, contract ownership, and approval-safe operating posture.
+
+## Part of the Kinetic Gain Suite
+
+Operator surface in the [Kinetic Gain Suite](https://suite.kineticgain.com/) — a portfolio of buyer-readable control planes spanning security posture, compliance evidence, data-platform governance, FinOps, and operator workflows. See the suite index for related surfaces. Apex: [kineticgain.com](https://kineticgain.com/).
