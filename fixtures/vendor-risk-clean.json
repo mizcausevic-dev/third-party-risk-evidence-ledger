@@ -1,0 +1,29 @@
+{
+  "vendors": [
+    {
+      "id": "vendor-authmesh",
+      "vendor": "AuthMesh",
+      "scope": "Identity and workforce authentication",
+      "status": "HEALTHY",
+      "domains": ["ACCESS", "PRIVACY", "COMPLIANCE", "RESILIENCE"],
+      "owner": "Security Governance",
+      "workflowHealthy": true
+    }
+  ],
+  "gaps": [
+    {
+      "id": "vr-clean-001",
+      "category": "Access",
+      "title": "Quarterly access review closed with owner confirmation",
+      "scope": "Identity and workforce authentication",
+      "severity": "low",
+      "status": "RESOLVED",
+      "evidenceKind": "Review",
+      "asset": "Quarterly access review",
+      "domain": "ACCESS",
+      "createdAt": "2026-05-20T12:00:00Z",
+      "updatedAt": "2026-05-20T14:00:00Z",
+      "owner": "Identity Governance"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "vendors": [
+    {
+      "id": "vendor-authmesh",
+      "vendor": "AuthMesh",
+      "scope": "Identity and workforce authentication",
+      "status": "HEALTHY",
+      "domains": ["ACCESS", "PRIVACY", "COMPLIANCE"],
+      "owner": "Security Governance",
+      "workflowHealthy": true
+    },
+    {
+      "id": "vendor-shipgrid",
+      "vendor": "ShipGrid",
+      "scope": "Fulfillment and routing orchestration",
+      "status": "DEGRADED",
+      "domains": ["RESILIENCE", "SUBPROCESSOR"],
+      "owner": "Vendor Risk Operations",
+      "workflowHealthy": false
+    }
+  ],
+  "gaps": [
+    {
+      "id": "vr-001",
+      "category": "Access",
+      "title": "Privileged admin review evidence is missing final approval",
+      "scope": "Identity and workforce authentication",
+      "severity": "high",
+      "status": "ACTIVE",
+      "evidenceKind": "Review",
+      "asset": "Privileged admin review packet",
+      "principal": "global-admins@authmesh.example",
+      "domain": "ACCESS",
+      "createdAt": "2026-05-26T09:10:00Z",
+      "updatedAt": "2026-05-26T10:35:00Z",
+      "owner": "Identity Governance"
+    },
+    {
+      "id": "vr-002",
+      "category": "Resilience",
+      "title": "Disaster recovery evidence is stale for routing platform",
+      "scope": "Fulfillment and routing orchestration",
+      "severity": "medium",
+      "status": "ACTIVE",
+      "evidenceKind": "Control",
+      "asset": "DR exercise packet",
+      "domain": "RESILIENCE",
+      "createdAt": "2026-05-25T20:15:00Z",
+      "updatedAt": "2026-05-25T21:00:00Z",
+      "owner": "Vendor Risk Operations"
+    },
+    {
+      "id": "vr-003",
+      "category": "Privacy",
+      "title": "Subprocessor list and DPA appendix are not current",
+      "scope": "Fulfillment and routing orchestration",
+      "severity": "medium",
+      "status": "ACTIVE",
+      "evidenceKind": "Questionnaire",
+      "asset": "Privacy appendix packet",
+      "domain": "SUBPROCESSOR",
+      "createdAt": "2026-05-24T22:00:00Z",
+      "updatedAt": "2026-05-24T22:40:00Z",
+      "owner": "Privacy Operations"
+    },
+    {
+      "id": "vr-004",
+      "category": "Workflow",
+      "title": "Exception packet is incomplete for SLA carve-out approval",
+      "scope": "Fulfillment and routing orchestration",
+      "severity": "high",
+      "status": "ACTIVE",
+      "evidenceKind": "Exception",
+      "asset": "SLA carve-out exception",
+      "domain": "COMPLIANCE",
+      "createdAt": "2026-05-24T08:30:00Z",
+      "updatedAt": "2026-05-24T09:15:00Z",
+      "owner": "Procurement Governance"
+    },
+    {
+      "id": "vr-005",
+      "category": "Compliance",
+      "title": "SOC packet remains open without final owner confirmation",
+      "scope": "Identity and workforce authentication",
+      "severity": "high",
+      "status": "ACTIVE",
+      "evidenceKind": "Incident",
+      "asset": "SOC evidence queue",
+      "domain": "COMPLIANCE",
+      "createdAt": "2026-05-23T12:00:00Z",
+      "updatedAt": "2026-05-23T12:20:00Z"
+    },
+    {
+      "id": "vr-006",
+      "category": "Access",
+      "title": "Legacy contractor role review was completed and closed",
+      "scope": "Identity and workforce authentication",
+      "severity": "low",
+      "status": "RESOLVED",
+      "evidenceKind": "Review",
+      "asset": "Contractor role review",
+      "principal": "contractor-ops@authmesh.example",
+      "domain": "ACCESS",
+      "createdAt": "2026-05-20T12:00:00Z",
+      "updatedAt": "2026-05-21T08:00:00Z",
+      "owner": "Identity Governance"
+    }
+  ]
+}
